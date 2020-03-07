@@ -74,5 +74,41 @@ namespace computer_graphics_1
             Filters filter = new GaussianFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void чернобелыйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GrayScaleFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сепияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SepiaFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void яркостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BrightnessFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void собельToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelXFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void собельПоYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelYFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharpnessFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
