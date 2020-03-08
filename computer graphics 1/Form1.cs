@@ -94,24 +94,11 @@ namespace computer_graphics_1
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
-        private void собельToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filters filter = new SobelXFilter();
-            backgroundWorker1.RunWorkerAsync(filter);
-        }
-
-        private void собельПоYToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filters filter = new SobelYFilter();
-            backgroundWorker1.RunWorkerAsync(filter);
-        }
-
         private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
-
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -140,6 +127,24 @@ namespace computer_graphics_1
                 }
                 pictureBox1.Image.Save(saveFileDialog1.FileName, format);
             }
+        }
+
+        private void motionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharrOperatorFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void тиснениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new EmbossingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void собельToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
         }
     }
 }
