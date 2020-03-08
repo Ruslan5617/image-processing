@@ -185,20 +185,6 @@
             this.резкостьToolStripMenuItem.Text = "Резкость";
             this.резкостьToolStripMenuItem.Click += new System.EventHandler(this.резкостьToolStripMenuItem_Click);
             // 
-            // тиснениеToolStripMenuItem
-            // 
-            this.тиснениеToolStripMenuItem.Name = "тиснениеToolStripMenuItem";
-            this.тиснениеToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.тиснениеToolStripMenuItem.Text = "Тиснение";
-            this.тиснениеToolStripMenuItem.Click += new System.EventHandler(this.тиснениеToolStripMenuItem_Click);
-            // 
-            // motionToolStripMenuItem
-            // 
-            this.motionToolStripMenuItem.Name = "motionToolStripMenuItem";
-            this.motionToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.motionToolStripMenuItem.Text = "Motion blur";
-            this.motionToolStripMenuItem.Click += new System.EventHandler(this.motionToolStripMenuItem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 

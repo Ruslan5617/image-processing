@@ -112,17 +112,6 @@ namespace computer_graphics_1
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
-        private void тиснениеToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filters filter = new StampingFilter();
-            backgroundWorker1.RunWorkerAsync(filter);
-        }
-
-        private void motionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Filters filter = new MotionblurFilter();
-            backgroundWorker1.RunWorkerAsync(filter);
-        }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
