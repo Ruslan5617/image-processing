@@ -22,9 +22,9 @@ C:\Users\Руслан\Desktop\image-processing\computer graphics 1\bin\Debug\com
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\bin\Debug\computer graphics 1.exe
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\bin\Debug\computer graphics 1.pdb
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer graphics 1.csprojAssemblyReference.cache
-C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer_graphics_1.Form1.resources
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer_graphics_1.Properties.Resources.resources
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer graphics 1.csproj.GenerateResource.cache
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer graphics 1.csproj.CoreCompileInputs.cache
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer graphics 1.exe
 C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer graphics 1.pdb
+C:\Users\Руслан\Desktop\image-processing\computer graphics 1\obj\Debug\computer_graphics_1.PhotoFilters.resources

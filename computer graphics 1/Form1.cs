@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace computer_graphics_1
 {
-    public partial class Form1 : Form
+    public partial class PhotoFilters : Form
     {
         Bitmap image;
-        public Form1()
+        public PhotoFilters()
         {
             InitializeComponent();
         }
