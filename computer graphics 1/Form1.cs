@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -109,6 +110,47 @@ namespace computer_graphics_1
         {
             Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void тиснениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new StampingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void motionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MotionblurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Image Files|*.png;*.jpg;*.bmp|All Files(*.*)|*.*";
+            ImageFormat format = ImageFormat.Png;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string ext = System.IO.Path.GetExtension(saveFileDialog1.FileName);
+                switch (ext)
+                {
+                    case ".jpg":
+                        format = ImageFormat.Jpeg;
+                        break;
+
+                    case ".bmp":
+                        format = ImageFormat.Bmp;
+                        break;
+
+                    case ".png":
+                        format = ImageFormat.Bmp;
+                        break;
+
+
+                        //MessageBox.Show("Файл сохранен");
+                }
+                pictureBox1.Image.Save(saveFileDialog1.FileName, format);
+            }
         }
     }
 }
